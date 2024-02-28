@@ -68,18 +68,12 @@ const cardSchema = new Schema<ICard>({
     minlength: 2,
     maxlength: 100,
   },
-  userId: {
+  years: {
     required: true,
-    type: String,
-    minlength: 2,
-    maxlength: 200,
+    type: Number,
+    minlength: 0,
+    maxlength: 100,
   },
-  // years: {
-  //   required: true,
-  //   type: Number,
-  //   minlength: 0,
-  //   maxlength: 100,
-  // },
 });
 
 export { cardSchema };

@@ -6,15 +6,6 @@ const creatCard = async (data: ICard, userId: string) => {
 
   card.userId = userId;
 
-  while (true) {
-    const random = Math.floor(Math.random() * 1_000_000);
-    const dbRes = await Card.findOne({ bizNumber: random });
-    if (!dbRes) {
-      card.bizNumber = random;
-      break;
-    }
-  }
-
   return card.save();
 };
 

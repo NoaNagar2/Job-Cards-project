@@ -7,6 +7,7 @@ import { errorHandler } from "./middleware/error-handler";
 import morgan from "morgan";
 import cors from "cors";
 import { cardsRouter } from "./routes/cards";
+import { cvRouter } from "./routes/cv";
 
 configDotEnv();
 connect();
@@ -20,7 +21,8 @@ app.use(json());
 app.use(morgan("dev"));
 app.use("/api/v1/users", usersRouter); //next(err)
 app.use("/api/v1/cards", cardsRouter); //next(err)
+app.use("/api/v1/cv", cvRouter); //next(err)
 app.use(errorHandler);
 app.use(notFound);
 
-app.listen(8080);
+app.listen(8081);

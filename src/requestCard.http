@@ -1,8 +1,8 @@
 ### get all cards
-GET http://localhost:8080/api/v1/cards
+GET http://localhost:8081/api/v1/cards
 
 ### create new card
-POST http://localhost:8080/api/v1/cards/userId
+POST http://localhost:8081/api/v1/cards/userId
 Content-Type: application/json
 
 {
@@ -17,21 +17,20 @@ Content-Type: application/json
 "jobType": "developer",
 "domain": "full stack",
 "studies": "studies",
-"years": 2,
-"userId":"65db115a1814e4bb4799a0a2"
+"years": 2
 }
 
 ### get my card
-GET http://localhost:8080/api/v1/cards/myCard/userId
+GET http://localhost:8081api/v1/cards/myCard/userId
 Authorization: bearer 
 # add token
 Content-Type: application/json
 
 ### get card by id
-GET http://localhost:8080/api/v1/cards/cardId
+GET http://localhost:8081/api/v1/cards/cardId
 
 ### edit card
-PUT http://localhost:8080/api/v1/cards/cardId
+PUT http://localhost:8081/api/v1/cards/cardId
 Authorization: bearer 
 # add token
 Content-Type: application/json
@@ -48,13 +47,12 @@ Content-Type: application/json
 "jobType": "developer",
 "domain": "full stack",
 "studies": "studies",
-"years": 2,
-"userId":"65db115a1814e4bb4799a0a2"
+"years": 2
 }
 
 
 ### delete card
-DELETE http://localhost:8080/api/v1/cards/cardId
+DELETE http://localhost:8081/api/v1/cards/cardId
 Authorization: bearer 
 # add token
 Content-Type: application/json

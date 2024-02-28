@@ -15,7 +15,6 @@ const schema = Joi.object<ICard>({
   domain: Joi.string().min(2).max(100).required(),
   studies: Joi.string().min(2).max(100).required(),
   years: Joi.number().min(0).max(100).required(),
-  userId: Joi.string().min(2).max(200).required(),
 });
 
 export { schema as joiCardSchema };

@@ -1,5 +1,3 @@
-import { IAddress, IImage } from "./user";
-
 type ICard = {
   url: string;
   alt: string;
@@ -12,9 +10,8 @@ type ICard = {
   jobType: string;
   domain: string;
   studies: string;
-  years: string;
-  userId: string;
-  cv;
+  years: number;
+  cv: string;
 };
 
 export { ICard };

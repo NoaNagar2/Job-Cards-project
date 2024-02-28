@@ -61,3 +61,5 @@ Content-Type: application/json
 DELETE http://localhost:8080/api/v1/users/userId
 Authorization: bearer 
 # add token
+
+
