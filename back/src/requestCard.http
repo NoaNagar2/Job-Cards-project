@@ -1,0 +1,60 @@
+### get all cards
+GET http://localhost:8081/api/v1/cards
+
+### create new card
+POST http://localhost:8081/api/v1/cards/userId
+Content-Type: application/json
+
+{
+"url":"........",
+"alt":"alt",
+"description":"description",
+"firstName":"noa",
+"lastName":"nagar",
+"email":"noanagar1@gmail.com",
+"phone":"0555555555",
+"location": "south",
+"jobType": "developer",
+"domain": "full stack",
+"studies": "studies",
+"years": 2
+}
+
+### get my card
+GET http://localhost:8081api/v1/cards/myCard/userId
+Authorization: bearer 
+# add token
+Content-Type: application/json
+
+### get card by id
+GET http://localhost:8081/api/v1/cards/cardId
+
+### edit card
+PUT http://localhost:8081/api/v1/cards/cardId
+Authorization: bearer 
+# add token
+Content-Type: application/json
+
+{
+"url":"........E",
+"alt":"alt",
+"description":"description",
+"firstName":"noa",
+"lastName":"nagar",
+"email":"noanagar1@gmail.com",
+"phone":"0555555555",
+"location": "south",
+"jobType": "developer",
+"domain": "full stack",
+"studies": "studies",
+"years": 2
+}
+
+
+### delete card
+DELETE http://localhost:8081/api/v1/cards/cardId
+Authorization: bearer 
+# add token
+Content-Type: application/json
+
+
