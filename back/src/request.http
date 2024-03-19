@@ -1,10 +1,10 @@
   ### GET All users:
-GET http://localhost:8080/api/v1/users
+GET http://localhost:8081/api/v1/users
 Authorization: bearer 
 # add token
 
 ### Add a user:
-POST http://localhost:8080/api/v1/users
+POST http://localhost:8081/api/v1/users
 Content-Type: application/json
 
 {
@@ -18,7 +18,7 @@ Content-Type: application/json
 
 
 ### Login:
-POST http://localhost:8080/api/v1/users/login
+POST http://localhost:8081/api/v1/users/login
 Content-Type: application/json
 
 {
@@ -28,17 +28,17 @@ Content-Type: application/json
 
 
 ### get user by id with JWT :
-GET http://localhost:8080/api/v1/users/userId
+GET http://localhost:8081/api/v1/users/userId
 Authorization: bearer 
 # add token
 
 ### GET user by admin
-GET http://localhost:8080/api/v1/users/userId
+GET http://localhost:8081/api/v1/users/userId
 Authorization: bearer 
 # add token
 
 ### PUT update uaer:
-PUT http://localhost:8080/api/v1/users/userId
+PUT http://localhost:8081/api/v1/users/userId
 Authorization: bearer
 Content-Type: application/json
 
@@ -52,13 +52,13 @@ Content-Type: application/json
 }
 
 ### change status of user
-PATCH http://localhost:8080/api/v1/users/userId
+PATCH http://localhost:8081/api/v1/users/userId
 Authorization: bearer 
 # add token
 Content-Type: application/json
 
 ### DELETE user
-DELETE http://localhost:8080/api/v1/users/userId
+DELETE http://localhost:8081/api/v1/users/userId
 Authorization: bearer 
 # add token
 
